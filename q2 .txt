@@ -1,0 +1,28 @@
+ 
+#include <bits/stdc++.h>  
+using namespace std;
+ 
+int main(){
+    
+    string str;
+
+    cout<<"Input string:\n";
+    cin>>str;
+    cout<<"character to remove\n";
+ 
+    char c;
+    cin>>c;
+
+    string newstr="";
+ 
+    for(int i=0;i<str.length();i++){
+ 
+        if(str[i]!=c){ 
+           
+            newstr+=string(1,str[i]); 
+        }
+    }
+ 
+    cout<<"string is: "<<newstr;
+ 
+}
